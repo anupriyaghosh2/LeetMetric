@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #ffb6c1; /* Matching your custom pink background background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #70777a; /* Main gray app container background */
+    padding: 30px;
+    border-radius: 12px;
+    width: 450px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    color: white;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2.2rem;
+    font-family: 'Georgia', serif;
+}
+
+.user-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+#search-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Circles Layout */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.circle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.progress-inner {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: radial-gradient(closest-side, #1e252b 82%, transparent 83% 100%),
+                conic-gradient(#10b981 var(--progress-degree, 0%), #1f2937 0);
+}
+
+.progress-inner span {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Card Styling for Overall Submissions */
+.stats-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #1e252b;
+    padding: 12px 16px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #10b981;
+    width: calc(50% - 6px); 
+    box-sizing: border-box; 
+    font-size: 1rem;
+}
+
+.card h3 {
+    color: #ffffff !important; 
+    font-size: 0.95rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.card p {
+    color: #10b981 !important; 
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
